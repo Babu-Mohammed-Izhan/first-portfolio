@@ -1,38 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700");
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&display=swap');
+
 .App {
-  text-align: center;
+  line-height: 1.2;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#logo {
+  font-size: 2rem;
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+#frontpage {
+  color: #212529;
   min-height: 100vh;
+  min-width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#frontpage-text {
+  font-family: 'Heebo', sans-serif;
+  min-height: 50vh;
+  min-width: 80vw;
+  align-items: center;
+  padding: 50px;
+}
+
+#first-line {
+  font-size: 6.5rem;
+}
+
+#second-line {
+  font-size: 2rem;
+}
+
+.undraw {
+  height: 50vh;
+  width: 50vw;
+}
+.icons {
+  margin-top: 2rem;
+}
+
+
+#projects {
+  min-height: 90vh;
+  min-width: 80vw;
+}
+
+.title {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 2rem;
+  padding: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.title > h1 {
+  font-size: 3rem ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+#skills {
+  min-height: 80vh;
+  min-width: 100%;
+}
+
+#contact {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #212529;
+  color: #fff;
+}
+
+
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #45505b;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #f2f3f5;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: .9s;
+  background-color: rgb(108,99,255);
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+}
+
+.section-title > h2 {
+  font-size: 3rem;
 }
