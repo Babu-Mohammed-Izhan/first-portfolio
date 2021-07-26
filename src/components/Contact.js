@@ -3,8 +3,6 @@ import {
     faGithubAlt,
     faTwitter,
     faLinkedin,
-    faInstagramSquare,
-    faGoogle
 } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
@@ -30,9 +28,9 @@ const Contact = () => {
                     </div>
 
                     <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">Phone Number</h4>
+                        <h4 class="text-uppercase mb-4">Email Address</h4>
                         <p class="lead mb-0">
-                            +91 99445 45113
+                            babuizhan1234@gmail.com
                         </p>
                     </div>
                 </div>

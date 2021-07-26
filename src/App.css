@@ -56,6 +56,8 @@
   min-width: 80vw;
 }
 
+
+
 .title {
   display: flex;
   align-items: center;
@@ -67,6 +69,25 @@
 .title > h1 {
   font-size: 3rem ;
 }
+
+
+#about {
+  min-height: 60vh;
+  min-width: 80vw;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px 5rem 0px 5rem;
+}
+
+.about-section > h4 {
+  margin-top: 20px;
+}
+
 
 
 #skills {
