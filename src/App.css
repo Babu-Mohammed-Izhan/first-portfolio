@@ -81,17 +81,17 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 0px 5rem 0px 5rem;
 }
 
 .about-section > h4 {
   margin-top: 20px;
+  word-wrap: break-word;
 }
 
 
 
 #skills {
-  min-height: 80vh;
+  min-height: 50vh;
   min-width: 100%;
 }
 
@@ -102,39 +102,13 @@
   color: #fff;
 }
 
-
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+#icons {
+  max-width: 50px;
+  max-height: 50px;
+  margin: 20px 10px 20px 10px;
 }
 
-.skills .progress .skill {
-  padding: 10px 0;
-  margin: 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #45505b;
-}
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: #f2f3f5;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: .9s;
-  background-color: rgb(108,99,255);
-}
 
 .section-title {
   display: flex;

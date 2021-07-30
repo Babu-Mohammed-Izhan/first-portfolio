@@ -1,69 +1,91 @@
-import { ProgressBar } from "react-bootstrap"
+import { Card, OverlayTrigger, Tooltip } from "react-bootstrap"
 
 
 const Skills = () => {
 
-    return (
-        <section id="skills" class="skills section-bg">
-            <div class="container">
 
-                <div class="section-title">
+    const icons = [
+        {
+            name: "HTML",
+            icon: "icons/html-5.png",
+        },
+        {
+            name: "CSS",
+            icon: "icons/css-3.png",
+        },
+        {
+            name: "SCSS",
+            icon: "icons/sass.png",
+        },
+        {
+            name: "Bootstrap",
+            icon: "icons/Bootstrap.png",
+        },
+        {
+            name: "Javascript",
+            icon: "icons/javascript.png",
+        },
+        {
+            name: "React",
+            icon: "icons/react.png",
+        },
+        {
+            name: "Express",
+            icon: "icons/expressjs.png",
+        },
+        {
+            name: "NodeJS",
+            icon: "icons/nodejs.png",
+        },
+        {
+            name: "MongoDB",
+            icon: "icons/mongodb.png",
+        },
+        {
+            name: "Redux",
+            icon: "icons/redux.png",
+        },
+        {
+            name: "Python",
+            icon: "icons/python.png",
+        },
+        {
+            name: "Jest",
+            icon: "icons/jest.png",
+        },
+    ]
+
+
+    return (
+        <section id="skills" className="skills section-bg">
+            <div className="container">
+
+                <div className="section-title">
                     <h2>Skills</h2>
                 </div>
-
-                <div class="row skills-content">
-
-                    <div class="col-lg-6">
-
-                        <div class="progress">
-                            <span class="skill">HTML <i class="val">80%</i></span>
-                            <ProgressBar now={80} />
+                <Card>
+                    <Card.Body>
+                        <div className="row skills-content">
+                            {icons.map((icon) => {
+                                return (
+                                    <div className="col col-xs-6 align-content-center" key={icon.name} >
+                                        <OverlayTrigger
+                                            key={icon.name}
+                                            placement="top"
+                                            overlay={
+                                                <Tooltip id="tooltip-top">
+                                                    {icon.name}
+                                                </Tooltip>
+                                            }
+                                        >
+                                            <img id="icons" src={icon.icon} alt={icon.name} key={icon.name} />
+                                        </OverlayTrigger>
+                                    </div>
+                                )
+                            })}
                         </div>
-
-                        <div class="progress">
-                            <span class="skill">CSS <i class="val">75%</i></span>
-                            <ProgressBar now={75} />
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">JavaScript <i class="val">80%</i></span>
-                            <ProgressBar now={80} />
-                        </div>
-
-
-                        <div class="progress">
-                            <span class="skill">Python <i class="val">80%</i></span>
-                            <ProgressBar now={80} />
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-6">
-
-                        <div class="progress">
-                            <span class="skill">MongoDB <i class="val">70%</i></span>
-                            <ProgressBar now={70} />
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">Express <i class="val">70%</i></span>
-                            <ProgressBar now={70} />
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">React <i class="val">75%</i></span>
-                            <ProgressBar now={75} />
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">Nodejs <i class="val">70%</i></span>
-                            <ProgressBar now={70} />
-                        </div>
-
-                    </div>
-
-                </div>
-
+                    </Card.Body>
+                </Card>
             </div>
         </section >
     )
