@@ -13,15 +13,22 @@ const Projects = () => {
       name: "AnimeList",
       description:
         "AnimeList is a website that lists all the anime in order of popularity and it uses a third party API (Jikan API) to fetch the data of the anime",
-      url: "https://frosty-mcnulty-ca0128.netlify.app/",
+      url: "https://izhananimelist.netlify.app/",
       github: "https://github.com/Babu-Mohammed-Izhan/animelist",
     },
     {
       name: "Webbey",
       description:
-        "Webbey is landing page for a web hosting startup company.It is created using react and is hosted on Netlify",
-      url: "https://pensive-ardinghelli-322dad.netlify.app/",
+        "Webbey is landing page for a web hosting startup company.It is created using react and is hosted on Netlify.",
+      url: "https://izhanwebhosting.netlify.app/",
       github: "https://github.com/Babu-Mohammed-Izhan/web-hosting-landing-page",
+    },
+    {
+      name: "GPA and CGPA Calculator",
+      description:
+        "Website that calculates GPA and CGPA. Select the number of semesters you want to calculate and enter all the credits and points. It will calculate your GPA and CGPA. Created using React and Bootstrap and hosted on netlify.",
+      url: "https://izhangpacalc.netlify.app/",
+      github: "https://github.com/Babu-Mohammed-Izhan/gpa-calculator",
     },
     {
       name: "ChatApp",
@@ -50,13 +57,6 @@ const Projects = () => {
         "This project is a full-stack website created using the MERN stack. The number and name of a person is entered using a form that will be stored in a MongoDB database. This will then be displayed on the website. The user can delete any number that is entered.",
       url: "https://mighty-mesa-69898.herokuapp.com/",
       github: "https://github.com/Babu-Mohammed-Izhan/PhoneBook-Backend",
-    },
-    {
-      name: "Firegram",
-      description:
-        "This is an online Gallery created using React as the frontend and Firebase for the Backend.",
-      url: "https://crickeet-152e9.web.app/",
-      github: "https://github.com/Babu-Mohammed-Izhan/fire-gram",
     },
   ];
 

@@ -1,24 +1,33 @@
-import { Container, Navbar } from 'react-bootstrap'
-import Nav from 'react-bootstrap/Nav'
+import { Container, Navbar } from "react-bootstrap";
+import Nav from "react-bootstrap/Nav";
 
 const Navigation = () => {
-
   return (
-    <Navbar bg="white" expand="md" variant="light" fixed="top" >
+    <Navbar bg="white" expand="md" variant="light" fixed="top">
       <Container>
-        <Navbar.Brand href="#home" className="font-secondary" id="logo">Izhan</Navbar.Brand>
+        <Navbar.Brand href="#home" className="font-secondary" id="logo">
+          Izhan
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>
-            <Nav.Link id="nav-link" href="#frontpage">Home</Nav.Link>
-            <Nav.Link href="#skills" id="nav-link">Skills</Nav.Link>
-            <Nav.Link href="#projects" id="nav-link">Projects</Nav.Link>
-            <Nav.Link href="#contact" id="nav-link">Contact</Nav.Link>
+            <Nav.Link id="nav-link" href="#frontpage">
+              Home
+            </Nav.Link>
+            <Nav.Link href="#projects" id="nav-link">
+              Projects
+            </Nav.Link>
+            <Nav.Link href="#skills" id="nav-link">
+              Skills
+            </Nav.Link>
+            <Nav.Link href="#contact" id="nav-link">
+              Contact
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;
