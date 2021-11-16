@@ -1,8 +1,8 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 const About = () => {
   return (
-    <Container id="about" bg="light">
+    <section id="about" bg="light">
       <Row>
         <Col className="title">
           <h1>About Me</h1>
@@ -23,7 +23,7 @@ const About = () => {
           </h4>
         </Col>
       </Row>
-    </Container>
+    </section>
   );
 };
 

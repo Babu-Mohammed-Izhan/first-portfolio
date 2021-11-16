@@ -62,39 +62,37 @@ const Skills = () => {
 
   return (
     <section id="skills" className="skills section-bg">
-      <div className="container">
-        <div className="section-title">
-          <h2>Skills</h2>
-        </div>
-        <Card>
-          <Card.Body>
-            <div className="row skills-content">
-              {icons.map((icon) => {
-                return (
-                  <div
-                    className="col col-lg-2 col-xs-6 skill-icons"
-                    key={icon.name}
-                  >
-                    <OverlayTrigger
-                      key={icon.name}
-                      placement="top"
-                      overlay={<Tooltip id="tooltip-top">{icon.name}</Tooltip>}
-                    >
-                      <img
-                        id="icons"
-                        src={icon.icon}
-                        alt={icon.name}
-                        key={icon.name}
-                      />
-                    </OverlayTrigger>
-                    <p>{icon.name}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </Card.Body>
-        </Card>
+      <div className="section-title">
+        <h2>Skills</h2>
       </div>
+      <Card>
+        <Card.Body>
+          <div className="row skills-content">
+            {icons.map((icon) => {
+              return (
+                <div
+                  className="col col-lg-2 col-xs-6 skill-icons"
+                  key={icon.name}
+                >
+                  <OverlayTrigger
+                    key={icon.name}
+                    placement="top"
+                    overlay={<Tooltip id="tooltip-top">{icon.name}</Tooltip>}
+                  >
+                    <img
+                      id="icons"
+                      src={icon.icon}
+                      alt={icon.name}
+                      key={icon.name}
+                    />
+                  </OverlayTrigger>
+                  <p>{icon.name}</p>
+                </div>
+              );
+            })}
+          </div>
+        </Card.Body>
+      </Card>
     </section>
   );
 };

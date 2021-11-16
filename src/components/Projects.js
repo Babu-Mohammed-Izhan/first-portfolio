@@ -1,4 +1,4 @@
-import { Col, Container, Row, Card } from "react-bootstrap";
+import { Col, Row, Card } from "react-bootstrap";
 
 const Projects = () => {
   const projects = [
@@ -51,17 +51,10 @@ const Projects = () => {
       url: "https://quizzical-swanson-0cf2d5.netlify.app/",
       github: "https://github.com/Babu-Mohammed-Izhan/Weathery",
     },
-    {
-      name: "Full Stack Phone Book Website",
-      description:
-        "This project is a full-stack website created using the MERN stack. The number and name of a person is entered using a form that will be stored in a MongoDB database. This will then be displayed on the website. The user can delete any number that is entered.",
-      url: "https://mighty-mesa-69898.herokuapp.com/",
-      github: "https://github.com/Babu-Mohammed-Izhan/PhoneBook-Backend",
-    },
   ];
 
   return (
-    <Container id="projects" bg="light">
+    <section id="projects">
       <Row>
         <Col className="title">
           <h1>My Projects</h1>
@@ -94,7 +87,7 @@ const Projects = () => {
           </Col>
         ))}
       </Row>
-    </Container>
+    </section>
   );
 };
 

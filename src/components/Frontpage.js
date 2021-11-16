@@ -1,5 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
-import { ReactComponent as Undraw } from "../undraw.svg";
+import undraw from "../undraw.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithubAlt,
@@ -10,9 +9,9 @@ import {
 
 const Frontpage = () => {
   return (
-    <Container id="frontpage">
-      <Row id="frontpage-text">
-        <Col sm={5}>
+    <section id="frontpage">
+      <div className="row" id="frontpage-text">
+        <div className="col-sm-6 hero hero-left">
           <h1 id="first-line">Hello</h1>
           <h2 id="second-line">I'm Izhan</h2>
           <h2 id="second-line">I am a Web Developer</h2>
@@ -42,12 +41,14 @@ const Frontpage = () => {
               <FontAwesomeIcon icon={faGoogle} />
             </a>
           </div>
-        </Col>
-        <Col sm={7}>
-          <Undraw className="undraw" />
-        </Col>
-      </Row>
-    </Container>
+        </div>
+        <div className="col-sm-6 hero-right hero">
+          <div className="undraw">
+            <img src={undraw} alt="undraw" />
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
