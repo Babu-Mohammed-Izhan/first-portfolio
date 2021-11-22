@@ -61,7 +61,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="skills section-bg">
+    <section id="skills" className="skills section-bg" data-aos="fade-up">
       <div className="section-title">
         <h2>Skills</h2>
       </div>
@@ -73,6 +73,7 @@ const Skills = () => {
                 <div
                   className="col col-lg-2 col-xs-6 skill-icons"
                   key={icon.name}
+                  data-aos="fade-up"
                 >
                   <OverlayTrigger
                     key={icon.name}

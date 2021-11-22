@@ -2,9 +2,6 @@ import { Container, Navbar } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 
 const Navigation = () => {
-  // const handleScroll = () => {};
-
-  // window.addEventListener("scroll", handleScroll);
   return (
     <Navbar bg="white" expand="md" variant="light" fixed="top">
       <Container>

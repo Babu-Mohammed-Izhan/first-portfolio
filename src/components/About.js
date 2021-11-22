@@ -2,7 +2,7 @@ import { Row, Col } from "react-bootstrap";
 
 const About = () => {
   return (
-    <section id="about" bg="light">
+    <section id="about" bg="light" data-aos="fade-up">
       <Row>
         <Col className="title">
           <h1>About Me</h1>

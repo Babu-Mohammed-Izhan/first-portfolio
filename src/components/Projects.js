@@ -63,7 +63,11 @@ const Projects = () => {
       <Row xs={1} md={2} className="g-4">
         {projects.map((project) => (
           <Col className="individual-cards" key={project.name}>
-            <Card border="indigo" className="project-cards h-100">
+            <Card
+              data-aos="fade-up"
+              border="indigo"
+              className="project-cards h-100"
+            >
               <Card.Img variant="top" />
               <Card.Body>
                 <Card.Title>{project.name}</Card.Title>
