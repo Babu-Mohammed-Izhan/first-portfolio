@@ -11,7 +11,7 @@ const Frontpage = () => {
   return (
     <section id="frontpage">
       <div className="row" id="frontpage-text">
-        <div className="col-sm-6 hero hero-left" data-aos="fade-up">
+        <div className="col-sm-6 hero hero-left">
           <h1 id="first-line">Hello</h1>
           <h2 id="second-line">I'm Izhan</h2>
           <h2 id="second-line">I am a Web Developer</h2>
@@ -42,7 +42,7 @@ const Frontpage = () => {
             </a>
           </div>
         </div>
-        <div className="col-sm-6 hero-right hero " data-aos="fade-up">
+        <div className="col-sm-6 hero-right hero ">
           <div className="undraw">
             <img src={undraw} alt="undraw" />
           </div>
