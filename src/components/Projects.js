@@ -3,11 +3,18 @@ import { Col, Row, Card } from "react-bootstrap";
 const Projects = () => {
   const projects = [
     {
-      name: "Quizz Me Not",
+      name: "Snip",
       description:
-        "Quizz Me Not is a full stack quiz website. In this you can enter your name and play the quiz. The scores for it are displayed at the end in a leaderboard.",
-      url: "https://quizz-me-not.herokuapp.com/",
-      github: "https://github.com/Babu-Mohammed-Izhan/Quiz-App-Frontend",
+        "Snip is a MERN stack web snippet application, created using React and Chakra UI. It uses a serverless function as it's backend, hosted on Vercel.",
+      url: "https://websnip.netlify.app/",
+      github: "https://github.com/Babu-Mohammed-Izhan/websnippet",
+    },
+    {
+      name: "Ripple",
+      description:
+        "Ripple is a real time crypto currency convertor, created using React and Tailwind, it shows you a chart with the history of prices created using Recharts. ",
+      url: "https://ripple-nine.vercel.app/",
+      github: "https://github.com/Babu-Mohammed-Izhan/cryptoconverter",
     },
     {
       name: "AnimeList",
@@ -17,11 +24,11 @@ const Projects = () => {
       github: "https://github.com/Babu-Mohammed-Izhan/animelist",
     },
     {
-      name: "Webbey",
+      name: "ChatApp",
       description:
-        "Webbey is landing page for a web hosting startup company.It is created using react and is hosted on Netlify.",
-      url: "https://izhanwebhosting.netlify.app/",
-      github: "https://github.com/Babu-Mohammed-Izhan/web-hosting-landing-page",
+        "This is a Chat Application created using React and uses Firebase V9 as the backend. Sign In using your google account to chat with others.",
+      url: "https://breathe-chatapp.herokuapp.com/",
+      github: "https://github.com/Babu-Mohammed-Izhan/breatheChatApp",
     },
     {
       name: "GPA and CGPA Calculator",
@@ -31,25 +38,25 @@ const Projects = () => {
       github: "https://github.com/Babu-Mohammed-Izhan/gpa-calculator",
     },
     {
-      name: "ChatApp",
+      name: "Personal Blog",
       description:
-        "This webapp is a chat app created using the MERN stack and it uses socket.io for the chatting feature.You can chat with anyone in real time It stores all the previous chats in a mongodb database.  ",
-      url: "https://breathe-chatapp.herokuapp.com/",
-      github: "https://github.com/Babu-Mohammed-Izhan/breatheChatApp",
+        "This is my personal blog created using Nextjs, Tailwind, and uses Sanity.io as the Content Management System.",
+      url: "https://next-blog-xi-coral.vercel.app/",
+      github: "https://github.com/Babu-Mohammed-Izhan/next-blog",
     },
     {
-      name: "Web Dev Diaries",
+      name: "Quizz Me Not",
       description:
-        "This is a mini-blog website that uses the MERN stack, JWT for authentication, it allows users to submit blogs and it will display them. The blogs can only be deleted by the user that created them. This project has been tested using jest and cypress.",
-      url: "https://web-dev-diaries.herokuapp.com/",
-      github: "https://github.com/Babu-Mohammed-Izhan/BlogList",
+        "Quizz Me Not is a full stack quiz website. In this you can enter your name and play the quiz. The scores for it are displayed at the end in a leaderboard.",
+      url: "https://quizz-me-not.herokuapp.com/",
+      github: "https://github.com/Babu-Mohammed-Izhan/Quiz-App-Frontend",
     },
     {
-      name: "Weathery",
+      name: "Typescript Express MongoDB Server Boilerplate",
       description:
-        "Weathery is a small weather application created using react and OpenWeatherMap API. The data is fetched using Axios and is displayed in real-time. It is hosted using Netlify",
-      url: "https://quizzical-swanson-0cf2d5.netlify.app/",
-      github: "https://github.com/Babu-Mohammed-Izhan/Weathery",
+        "This is a MVC Express API Boilerplate created using Typescript, and uses MongoDB as the Database.",
+      github:
+        "https://github.com/Babu-Mohammed-Izhan/typescript-express-server-template",
     },
   ];
 
@@ -72,13 +79,16 @@ const Projects = () => {
               <Card.Body>
                 <Card.Title>{project.name}</Card.Title>
                 <Card.Text>{project.description}</Card.Text>
-                <Card.Link
-                  href={project.url}
-                  style={{ color: "rgb(108,99,255)" }}
-                  target="_blank"
-                >
-                  Website Link
-                </Card.Link>
+                {project.url ? (
+                  <Card.Link
+                    href={project.url}
+                    style={{ color: "rgb(108,99,255)" }}
+                    target="_blank"
+                  >
+                    Website Link
+                  </Card.Link>
+                ) : null}
+
                 <Card.Link
                   href={project.github}
                   style={{ color: "rgb(108,99,255)" }}
